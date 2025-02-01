@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/SCSS/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="cal" class="calculator calculator-dark">
+      <!-- 1st row -->
+      <tr class="row">
+        <td colspan="5" id="dark-light">
+          <input type="text" class="display-box display-dark" id="result" />
+        </td>
+      </tr>
+
+      <!-- 2nd row -->
+      <tr class="row">
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="("
+            onclick="display('\(')"
+          />
+        </td>
+        
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="AC"
+            onclick="clearScreen()"
+            id="ac-btn"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value=")"
+            onclick="display('\)')"
+          />
+        </td>
+        <td>
+          <div id="tog" class="checkbox">
+            <div class="toggleSwitch">
+              <div class="toggle"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- 3rd row -->
+      <tr class="row">
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="7"
+            onclick="display('7')"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="8"
+            onclick="display('8')"
+            id="button"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="9"
+            onclick="display('9')"
+          />
+        </td>
+        <td>
+          <input class="clr" type="button" value="%" onclick="display('%')" />
+        </td>
+        <td>
+          <input class="clr" type="button" value="/" onclick="display('/')" />
+        </td>
+      </tr>
+
+      <!-- 4th row -->
+      <tr class="row">
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="4"
+            onclick="display('4')"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="5"
+            onclick="display('5')"
+            id="button"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="6"
+            onclick="display('6')"
+          />
+        </td>
+        <td rowspan="2">
+          <input
+            class="clr"
+            type="button"
+            value="+"
+            onclick="display('+')"
+            id="add-btn"
+          />
+        </td>
+        <td>
+          <input class="clr" type="button" value="*" onclick="display('*')" />
+        </td>
+      </tr>
+
+      <!-- 5th row -->
+      <tr class="row" class="row">
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="1"
+            onclick="display('1')"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="2"
+            onclick="display('2')"
+            id="button"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="3"
+            onclick="display('3')"
+          />
+        </td>
+        <!-- <td ><input type="button" value="+" onclick="display('+')"/></td> -->
+        <td>
+          <input class="clr" type="button" value="-" onclick="display('-')" />
+        </td>
+      </tr>
+
+      <!-- 6th row -->
+      <tr class="row">
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="."
+            onclick="display('.')"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="0"
+            onclick="display('0')"
+            id="button"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            class="numbers"
+            value="⌫"
+            onclick="backspace('⌫')"
+          />
+        </td>
+        <td colspan="2">
+          <input
+            class="clr"
+            type="button"
+            value="="
+            onclick="calculate()"
+            id="eql-btn"
+          />
+        </td>
+        <!-- <td><input type="button" value="=" onclick="display('-')"/></td> -->
+      </tr>
+    </table>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
